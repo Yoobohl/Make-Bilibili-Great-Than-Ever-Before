@@ -765,6 +765,8 @@ const playerVideoFit = {
             logger.log(`Flag,${panelItem.innerText}`)
             if (panelItem) {
                 panelItem.style.height = '';
+				// 保留音量均衡选项
+                document.querySelector(".bpx-player-ctrl-setting-loudness").style.display = "block"
             }
         }
         timer = self.setInterval(injectButton, 200);
